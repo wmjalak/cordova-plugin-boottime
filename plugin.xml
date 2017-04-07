@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-boottime" version="0.0.1">
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <name>BootTime</name>
+    <description>Returns milliseconds since boot, including time spent in sleep.</description>
+    <license></license>
+    <keywords>cordova, boottime, boot, monotonic</keywords>
+    <repo>https://unknown</repo>
+
+    <!-- JavaScript Interface -->
+    <js-module src="www/boottime.js" name="BootTime">
+        <clobbers target="bootTime" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BootTime">
+                <param name="android-package" value="com.wmjalak.cordova.boottime.BootTime"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/BootTime.java" target-dir="src/com/wmjalak/cordova/boottime" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BootTime">
+                <param name="ios-package" value="CDVBootTime" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVBootTime.h" />
+        <source-file src="src/ios/CDVBootTime.m" />
+
+    </platform>
+
+</plugin>
