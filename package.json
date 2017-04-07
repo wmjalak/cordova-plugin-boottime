@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-boottime",
+  "version": "0.0.1",
+  "description": "Returns milliseconds since boot, including time spent in sleep.",
+  "cordova": {
+    "id": "cordova-plugin-boottime",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmjalak/cordova-plugin-boottime.git"
+  },
+  "keywords": [
+    "cordova",
+    "boottime",
+    "boot",
+    "monotonic",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "wmjalak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmjalak/cordova-plugin-boottime/issues"
+  },
+  "homepage": "https://github.com/wmjalak/cordova-plugin-boottime#readme"
+}

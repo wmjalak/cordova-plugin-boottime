@@ -10,7 +10,7 @@
     <description>Returns milliseconds since boot, including time spent in sleep.</description>
     <license></license>
     <keywords>cordova, boottime, boot, monotonic</keywords>
-    <repo>https://unknown</repo>
+    <repo>https://github.com/wmjalak/cordova-plugin-boottime.git</repo>
 
     <!-- JavaScript Interface -->
     <js-module src="www/boottime.js" name="BootTime">
